@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Recipe Finder</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+<body class="signup-page">
+    <div class="container">
+        <h1>Create an Account</h1>
+        <form id="signup-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Password" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility('password')">🫣</span>
+            </div>
+            <div class="password-container">
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                <span class="toggle-password" onclick="togglePasswordVisibility('confirm-password')">🫣</span>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="signin.html">Sign In</a></p>
+    </div>
+    <script src="login-script.js"></script>
+</body>
+</html>

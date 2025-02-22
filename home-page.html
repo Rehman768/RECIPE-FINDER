@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Recipe Finder</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+<body class="home-page">
+    <header id="main-header" style="display: flex; align-items: center; position: relative;">
+        <a href="home-page.html">
+            <img src="images/RF.jpg" alt="Recipe Finder Logo" style="height: 50px; margin-right: 20px;">
+        </a>
+        <h1 class="animated-title">RECIPE FINDER</h1>
+        <nav style="margin-left: auto;">
+            <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+                <li><a href="home-page.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="sidebar" class="sidebar">
+        <a href="home-page.html">
+            <img src="images/RF.jpg" alt="Recipe Finder Logo" style="height: 50px; margin-bottom: 20px;">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="home-page.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="search-section">
+            <h2>Find a Recipe</h2>
+            <input type="text" id="ingredientInput" placeholder="Enter ingredients...">
+            <button id="searchButton">Search</button>
+            <button id="uploadImageButton">Upload Image</button>
+            <input type="file" id="fileInput" style="display: none;" accept="image/*">
+        </section>
+
+        <section class="featured-recipes">
+            <h2>Featured Recipes</h2>
+            <div class="recipe-list">
+                <div class="recipe-card">
+                    <img src="images/butter-chicken.jpg" alt="Butter Chicken">
+                    <h3>Butter Chicken</h3>
+                    <button onclick="window.location.href='butter-chicken.html'">View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/margherita-pizza.jpg" alt="Margherita Pizza">
+                    <h3>Margherita Pizza</h3>
+                    <button onclick="window.location.href='margherita-pizza.html'">View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/cheeseburger.jpg" alt="Cheeseburger">
+                    <h3>Cheeseburger</h3>
+                    <button onclick="window.location.href='cheeseburger.html'">View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/kung-pao-chicken.jpg" alt="Kung Pao Chicken">
+                    <h3>Kung Pao Chicken</h3>
+                    <button onclick="window.location.href='kung-pao-chicken.html'">View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/paneer-tikka.jpg" alt="Paneer Tikka">
+                    <h3>Paneer Tikka">
+                    <button onclick="window.location.href='paneer-tikka.html'">View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/lasagna.jpg" alt="Lasagna">
+                    <h3>Lasagna</h3>
+                    <button onclick="window.location.href='lasagna.html'">View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/bbq-ribs.jpg" alt="BBQ Ribs">
+                    <h3>BBQ Ribs</h3>
+                    <button onclick="window.location.href='bbq-ribs.html'">View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/sweet-and-sour-pork.jpg" alt="Sweet and Sour Pork">
+                    <h3>Sweet and Sour Pork</h3>
+                    <button onclick="window.location.href='sweet-and-sour-pork.html'">View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/chole-bhature.jpg" alt="Chole Bhature">
+                    <h3>Chole Bhature</h3>
+                    <button onclick="window.location.href='chole-bhature.html'">View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/spaghetti-carbonara.jpg" alt="Spaghetti Carbonara">
+                    <h3>Spaghetti Carbonara</h3>
+                    <button onclick="window.location.href='spaghetti-carbonara.html'">View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/apple-pie.jpg" alt="Apple Pie">
+                    <h3>Apple Pie</h3>
+                    <button onclick="window.location.href='apple-pie.html'">View Recipe</button>
+                </div>
+                <div class="recipe-card">
+                    <img src="images/spring-rolls.jpg" alt="Spring Rolls">
+                    <h3>Spring Rolls</h3>
+                    <button onclick="window.location.href='spring-rolls.html'">View Recipe</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Recipe Finder</h2>
+            <p>Recipe Finder is an application designed to help you find the best recipes from around the world. Whether you're looking for Indian, Italian, American, or Chinese recipes, we've got you covered. Our mission is to make cooking easier and more enjoyable by providing a wide variety of recipes that cater to different tastes and dietary preferences.</p>
+            <p>Our team of culinary experts and food enthusiasts work tirelessly to curate and create recipes that are not only delicious but also easy to follow. We believe that cooking should be a fun and rewarding experience, and our goal is to inspire you to try new dishes and expand your culinary horizons.</p>
+            <p>At Recipe Finder, we understand that everyone has different dietary needs and preferences. That's why we offer a diverse range of recipes, including vegetarian, vegan, gluten-free, and low-carb options. Whether you're a seasoned chef or a beginner in the kitchen, you'll find recipes that suit your skill level and taste.</p>
+            <p>Our user-friendly interface makes it easy to search for recipes based on ingredients, cuisine, and dietary preferences. You can also save your favorite recipes and create personalized meal plans to make cooking even more convenient. With Recipe Finder, you'll never run out of ideas for what to cook next.</p>
+            <p>In addition to our extensive recipe collection, we also offer cooking tips, techniques, and tutorials to help you improve your culinary skills. From basic knife skills to advanced cooking methods, our resources are designed to help you become a more confident and proficient cook.</p>
+            <p>We believe that food is more than just sustenance; it's a way to bring people together and create lasting memories. Whether you're cooking for yourself, your family, or hosting a dinner party, Recipe Finder is here to help you create delicious meals that everyone will love.</p>
+            <p>Our community of food lovers is at the heart of Recipe Finder. We encourage you to share your own recipes, tips, and experiences with others. By connecting with fellow food enthusiasts, you can discover new recipes, get inspired, and learn from each other.</p>
+            <p>At Recipe Finder, we are committed to providing high-quality content and a seamless user experience. We continuously update our recipe database and improve our platform to ensure that you have access to the best recipes and cooking resources available.</p>
+            <p>We value your feedback and suggestions. If you have any questions, comments, or ideas for how we can improve Recipe Finder, please don't hesitate to reach out to us. Your input helps us make Recipe Finder the best it can be.</p>
+            <p>Thank you for choosing Recipe Finder as your go-to source for recipes and cooking inspiration. We hope you enjoy exploring our site and discovering new dishes to try. Happy cooking!</p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:rehmanshaik171@gmail.com"><strong>rehmanshaik171@gmail.com</strong></a></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Recipe Finder. All rights reserved.</p>
+    </footer>
+
+    <script src="images/home-page.js"></script>
+    <script src="search-ingredient.js"></script>
+    <script src="sidebar.js"></script>
+    <script src="upload-image.js"></script>
+</body>
+</html>

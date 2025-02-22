@@ -1,0 +1,663 @@
+body.recipe-finder {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body.recipe-finder .container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+body.recipe-finder h1 {
+    text-align: center;
+    color: #333;
+}
+
+body.recipe-finder form {
+    display: flex;
+    flex-direction: column;
+}
+
+body.recipe-finder input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+body.recipe-finder button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+body.recipe-finder button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+body.recipe-finder p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+body.recipe-finder a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+body.recipe-finder a:hover {
+    text-decoration: underline;
+}
+
+body.home-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('Images/bg-img.png') no-repeat center center fixed; /* Ensure this file exists in the correct directory */
+    background-size: cover;
+    text-align: center;
+}
+
+body.home-page header {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px;
+}
+
+body.home-page nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+body.home-page nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+body.home-page nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body.home-page .search-section {
+    margin: 20px;
+}
+
+body.home-page .search-section input, 
+body.home-page .search-section button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body.home-page .featured-recipes {
+    margin: 20px;
+}
+
+body.home-page .recipe-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+body.home-page .recipe-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.home-page .recipe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+body.home-page .recipe-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+body.home-page .about-section {
+    color: white;
+    font-weight: bold;
+    background-color: rgba(211, 211, 211, 0.616); /* Light gray background with some transparency */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+body.home-page .contact-section {
+    margin-top: 20px;
+}
+
+body.home-page .footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+body.recipes-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+body.recipes-page header {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px;
+}
+
+body.recipes-page nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+body.recipes-page nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+body.recipes-page nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body.recipes-page .recipe-styles {
+    margin: 20px;
+}
+
+body.recipes-page .recipe-styles ul {
+    list-style: none;
+    padding: 0;
+}
+
+body.recipes-page .recipe-styles ul li {
+    margin: 10px 0;
+}
+
+body.recipes-page .recipe-styles ul li a {
+    display: block;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+body.recipes-page .recipe-styles ul li a:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
+
+body.recipes-page .recipe-list {
+    margin: 20px;
+}
+
+body.recipes-page .recipe-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+body.recipes-page .recipe-list ul li {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    body.home-page .recipe-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+body.login-page, body.signup-page {
+    font-family: Arial, sans-serif;
+    background: url('images/login-bg.jpg') no-repeat center center fixed; /* Ensure this file exists in the correct directory */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body.login-page .container, body.signup-page .container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+body.login-page h1, body.signup-page h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+body.login-page form, body.signup-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+body.login-page input, body.signup-page input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+body.login-page button, body.signup-page button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+body.login-page button:hover, body.signup-page button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+body.login-page p, body.signup-page p {
+    margin-top: 1rem;
+}
+
+body.login-page a, body.signup-page a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+body.login-page a:hover, body.signup-page a:hover {
+    text-decoration: underline;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 52px; /* Increase space for the icon */
+    box-sizing: border-box; /* Ensures input width remains correct */
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    right: 1px; /* Move it closer inside */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    padding: 1px;
+}
+
+
+body.recipe-detail-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+body.recipe-detail-page header {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px;
+}
+
+body.recipe-detail-page nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+body.recipe-detail-page nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+body.recipe-detail-page nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body.recipe-detail-page .recipe-detail {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+body.recipe-detail-page .recipe-image {
+    flex: 1;
+    padding: 20px;
+}
+
+body.recipe-detail-page .recipe-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+body.recipe-detail-page .recipe-info {
+    flex: 2;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+body.recipe-detail-page .recipe-info h2 {
+    color: #ff6600;
+}
+
+body.recipe-detail-page .recipe-info ul, 
+body.recipe-detail-page .recipe-info ol {
+    list-style: none;
+    padding: 0;
+}
+
+body.recipe-detail-page .recipe-info ul li, 
+body.recipe-detail-page .recipe-info ol li {
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    body.recipe-detail-page .recipe-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+body.recipe-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+body.recipe-page header {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px;
+}
+
+body.recipe-page nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+body.recipe-page nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+body.recipe-page nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body.recipe-page .recipe-details {
+    margin: 20px;
+}
+
+body.recipe-page .recipe-details img.recipe-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+body.recipe-page .recipe-details h3 {
+    color: #ff6600;
+}
+
+body.recipe-page .recipe-details ul, 
+body.recipe-page .recipe-details ol {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+body.recipe-page .recipe-details ul li, 
+body.recipe-page .recipe-details ol li {
+    margin: 10px 0;
+}
+
+.styled-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 200px; /* Ensure all buttons have the same width */
+    text-align: center; /* Center the text inside the button */
+}
+
+.styled-button:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
+
+.styled-button:active {
+    transform: scale(0.95);
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff6600;
+}
+
+body.hotel-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+body.hotel-page header {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px;
+}
+
+body.hotel-page nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+body.hotel-page nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+body.hotel-page nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body.hotel-page .hotel-list {
+    margin: 20px;
+}
+
+body.hotel-page .hotel-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+body.hotel-page .hotel-list ul li {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+body.hotel-page .hotel-list ul li a {
+    display: block;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+body.hotel-page .hotel-list ul li a:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
+
+body.hotel-page .hotel-list ul li a:active {
+    transform: scale(0.95);
+}
+
+body.hotel-page .hotel-list ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+body.hotel-page .hotel-list ul li a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.animated-title {
+    display: inline-block;
+    animation: moveLeftRight 6s infinite linear;
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes moveLeftRight {
+    0% { transform: translateX(-50%) translateX(0); }
+    50% { transform: translateX(-50%) translateX(100px); }
+    100% { transform: translateX(-50%) translateX(0); }
+}
+
+.suggestions {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: white;
+    width: calc(100% - 20px);
+    z-index: 1000;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -290px; /* Initially hidden */
+    width: 110px;
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ff6600;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+body.with-sidebar .sidebar {
+    left: 0;
+}
+
+body.with-sidebar main {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease;
+}
+
